@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw</title>
+    <link rel="stylesheet" href="css\fibacss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="C:\Users\AngeLowKey\Desktop\fibaDraw\script\script.js"></script>
+</head>
+<body>
+    <div class="menu boderRight" onclick="menuSelector(1)">QUALIFIED TEAMS</div>
+    <div class="menu active" onclick="menuSelector(2)">DRAW SIMULATOR</div>
+    <div class="message">
+      
+    </div>
+    <div class="drawCon">
+        <div class="partitionDraw">
+            <div class="potCon" id="pot1">
+                <div class="potTextCon">
+                    <div class="potText">POT 1</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot1_1">
+                            <img class="drawFlag" src="imgForFiba/phFlag.png">
+                            PHI
+                        </div>
+                    </div>
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot1_2">
+                            <img class="drawFlag" src="imgForFiba/spainFlag.png">
+                            ESP
+                        </div>
+                    </div>    
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot1_3">
+                            <img class="drawFlag" src="imgForFiba/usaFlag.png">
+                            USA
+                        </div>
+                    </div>    
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot1_4">
+                            <img class="drawFlag" src="imgForFiba/australiaFlag.png">
+                            AUS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="potCon" id="pot3">
+                <div class="potTextCon">
+                    <div class="potText">POT 3</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot3_1">
+                            <img class="drawFlag" src="imgForFiba/greeceFlag.png">
+                            GRE
+                        </div>
+                    </div>
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot3_2">
+                            <img class="drawFlag" src="imgForFiba/italyFlag.png">
+                            ITA
+                        </div>
+                    </div>
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot3_3">
+                            <img class="drawFlag" src="imgForFiba/germanyFlag.png">
+                            GER
+                        </div>
+                    </div>
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot3_4">
+                            <img class="drawFlag" src="imgForFiba/brazilFlag.png">
+                            BRA
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="potCon" id="pot5">
+                <div class="potTextCon">
+                    <div class="potText">POT 5</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot5_1">
+                            <img class="drawFlag" src="imgForFiba/iranFlag.png">
+                            IRI
+                        </div>
+                    </div>  
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot5_2">
+                            <img class="drawFlag" src="imgForFiba/dominicanRepublicFlag.png">
+                            DOM
+                        </div>
+                    </div>  
+                    <div class="perCountryCon">      
+                        <div class="perCountry" id="pot5_3">
+                            <img class="drawFlag" src="imgForFiba/finlandFlag.png">
+                            FIN
+                        </div>
+                    </div>  
+                    <div class="perCountryCon">      
+                        <div class="perCountry" id="pot5_4">
+                            <img class="drawFlag" src="imgForFiba/newZealandFlag.png">
+                            NZL
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="potCon" id="pot7">
+                <div class="potTextCon">
+                    <div class="potText">POT 7</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">  
+                        <div class="perCountry" id="pot7_1">
+                            <img class="drawFlag" src="imgForFiba/jordanFlag.png">
+                            JOR
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot7_2">
+                            <img class="drawFlag" src="imgForFiba/japanFlag.png">
+                            JPN
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot7_3">
+                            <img class="drawFlag" src="imgForFiba/angolaFlag.png">
+                            ANG
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot7_4">
+                            <img class="drawFlag" src="imgForFiba/ivoryCoastFlag.png">
+                            CIV
+                        </div>
+                    </div>    
+                </div>
+            </div>
+           
+        </div>
+        <div class="partitionDraw flotRight">
+            <div class="potCon" id="pot2">
+                <div class="potTextCon">
+                    <div class="potText">POT 2</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">  
+                        <div class="perCountry" id="pot2_1">
+                            <img class="drawFlag" src="imgForFiba/franceFlag.png">
+                            FRA
+                        </div>
+                    </div>
+                    <div class="perCountryCon">      
+                        <div class="perCountry" id="pot2_2">
+                            <img class="drawFlag" src="imgForFiba/serbiaFlag.png">
+                            SRB
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot2_3">
+                            <img class="drawFlag" src="imgForFiba/sloveniaFlag.png">
+                            SLO
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot2_4">
+                            <img class="drawFlag" src="imgForFiba/lithuiniaFlag.png">
+                            LTU
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="potCon" id="pot4">
+                <div class="potTextCon">
+                    <div class="potText">POT 4</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon"> 
+                        <div class="perCountry" id="pot4_1">
+                            <img class="drawFlag" src="imgForFiba/canadaFlag.png">
+                            CAN
+                        </div>
+                    </div>
+                    <div class="perCountryCon">
+                        <div class="perCountry" id="pot4_2">
+                            <img class="drawFlag" src="imgForFiba/venezuelaFlag.png">
+                            VEN
+                        </div>
+                    </div>
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot4_3">
+                            <img class="drawFlag" src="imgForFiba/montenegroFlag.png">
+                            MNE
+                        </div>
+                    </div>
+                    <div class="perCountryCon">    
+                        <div class="perCountry" id="pot4_4">
+                            <img class="drawFlag" src="imgForFiba/puertoRicoFlag.png">
+                            PUR
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="potCon" id="pot6">
+                <div class="potTextCon">
+                    <div class="potText">POT 6</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon"> 
+                        <div class="perCountry" id="pot6_1">
+                            <img class="drawFlag" src="imgForFiba/chinaFlag.png">
+                            CHN
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot6_2">
+                            <img class="drawFlag" src="imgForFiba/latviaFlag.png">
+                            LAT
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot6_3">
+                            <img class="drawFlag" src="imgForFiba/mexicoFlag.png">
+                            MEX
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot6_4">
+                            <img class="drawFlag" src="imgForFiba/georgiaFlag.png">
+                            GEO
+                        </div>
+                    </div>    
+                </div>
+            </div>   
+            <div class="potCon" id="pot8">
+                <div class="potTextCon">
+                    <div class="potText">POT 8</div>
+                </div>
+                <div class="spacer"></div>
+                <div class="countryCon">
+                    <div class="perCountryCon">  
+                        <div class="perCountry" id="pot8_1">
+                            <img class="drawFlag" src="imgForFiba/lebanonFlag.png">
+                            LBN
+                        </div>
+                    </div>
+                    <div class="perCountryCon">      
+                        <div class="perCountry" id="pot8_2">
+                            <img class="drawFlag" src="imgForFiba/egyptFlag.png">
+                            EGY
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot8_3">
+                            <img class="drawFlag" src="imgForFiba/southSudanFlag.png">
+                            SSD
+                        </div>
+                    </div>
+                    <div class="perCountryCon">     
+                        <div class="perCountry" id="pot8_4">
+                            <img class="drawFlag" src="imgForFiba/capeVerdeFlag.png">
+                            CPV
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="raffleCon">
+            <div class="buttonCon">
+                <button class="click">Simulate Draw</button>
+                <button class="officialResultButton">Official Result</button>
+            </div>
+            <div class="console">
+                <div class="heading">LOG</div>
+                <div class="log" id="logId">
+                </div>
+                
+            </div>   
+            <div class="unknowfixDivOuter">
+                <img class="unknown" src="imgForFiba/unknown.png">
+                <div class="fixdivInner">
+                    <div class="unknownMovingDiv">
+                        <div class="movingtext"></div>
+                        <div class="movingFullText"></div>
+                        <img class="unknownNumber"src="imgForFiba/unknown.png">
+                        <img class="unknownTextCon" src="imgForFiba/blankTextCon 2.png">    
+                    </div>
+                </div>
+            </div>  
+        </div>
+        </div>
+    </div>
+    <div class="playWhereLabelCon">
+        <div class="labelCon aranetaText">
+            <b>MANILA</b>
+            <div class="subLabel">(Araneta Colliseum)</div>
+        </div>
+        <div class="labelCon moaText">
+            <b>MANILA</b>
+            <div class="subLabel">(Mall of Asia Arena)</div>
+        </div>
+        <div class="labelCon okinawaText">
+            <b>OKINAWA</b>
+            <div class="subLabel">(Okinawa Arena)</div>
+        </div>
+        <div class="labelCon jakartaText">
+            <b>JAKARTA</b>
+            <div class="subLabel">(Indonesia Arena)</div>
+        </div>
+    </div>
+    <div class="groupCon">
+       
+        <div class="group araneta" id="groupA">
+            <div class="groupCover" id="coverA"></div>
+            Group A
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupA1" src="">
+                    <span class="resultCountry" id="textGroupA1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupA2" src="">
+                    <span class="resultCountry" id="textGroupA2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupA3" src="">
+                    <span class="resultCountry" id="textGroupA3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupA4" src="">
+                    <span class="resultCountry" id="textGroupA4"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="group araneta" id="groupB">
+            <div class="groupCover" id="coverB"></div>
+            Group B
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupB1" src="">
+                    <span class="resultCountry" id="textGroupB1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupB2" src="">
+                    <span class="resultCountry" id="textGroupB2" ></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupB3" src="">
+                    <span class="resultCountry" id="textGroupB3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupB4" src="">
+                    <span class="resultCountry" id="textGroupB4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group moa" id="groupC">
+            <div class="groupCover" id="coverC"></div>
+            Group C
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupC1" src="">
+                    <span class="resultCountry" id="textGroupC1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupC2" src="">
+                    <span class="resultCountry" id="textGroupC2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupC3" src="">
+                    <span class="resultCountry" id="textGroupC3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupC4" src="">
+                    <span class="resultCountry" id="textGroupC4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group moa" id="groupD">
+            <div class="groupCover" id="coverD"></div>
+            Group D
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupD1" src="">
+                    <span class="resultCountry" id="textGroupD1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupD2" src="">
+                    <span class="resultCountry" id="textGroupD2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupD3" src="">
+                    <span class="resultCountry" id="textGroupD3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupD4" src="">
+                    <span class="resultCountry" id="textGroupD4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group okinawa" id="groupE">
+            <div class="groupCover" id="coverE"></div>
+            Group E
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupE1" src="">
+                    <span class="resultCountry" id="textGroupE1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupE2" src="">
+                    <span class="resultCountry" id="textGroupE2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupE3" src="">
+                    <span class="resultCountry" id="textGroupE3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupE4" src="">
+                    <span class="resultCountry" id="textGroupE4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group okinawa" id="groupF">
+            <div class="groupCover" id="coverF"></div>
+            Group F
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupF1" src="">
+                    <span class="resultCountry" id="textGroupF1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupF2" src="">
+                    <span class="resultCountry" id="textGroupF2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupF3" src="">
+                    <span class="resultCountry" id="textGroupF3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupF4" src="">
+                    <span class="resultCountry" id="textGroupF4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group jakarta" id="groupG">
+            <div class="groupCover" id="coverG"></div>
+            Group G
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupG1" src="">
+                    <span class="resultCountry" id="textGroupG1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupG2" src="">
+                    <span class="resultCountry" id="textGroupG2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupG3" src="">
+                    <span class="resultCountry" id="textGroupG3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupG4" src="">
+                    <span class="resultCountry" id="textGroupG4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="group jakarta" id="groupH">
+            <div class="groupCover" id="coverH"></div>
+            Group H
+            <div class="teams">
+                <div class="teamNumber">1</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupH1" src="">
+                    <span class="resultCountry" id="textGroupH1"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">2</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupH2" src="">
+                    <span class="resultCountry" id="textGroupH2"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">3</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupH3" src="">
+                    <span class="resultCountry" id="textGroupH3"></span>
+                </div>
+            </div>
+            <div class="teams">
+                <div class="teamNumber">4</div>
+                <div class="countryFlagResultCon">
+                    <img class="resultFlag" id="flagGroupH4" src="">
+                    <span class="resultCountry" id="textGroupH4"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="con nav">
+        <div class="navigator">
+        
+            <div class="play">
+                <img class="playButton"src="imgForFiba/fastBackward.png">
+                <img class="playButton"src="imgForFiba/back.png">
+                <img class="playButton" id="play" src="imgForFiba/play.png">
+                <img class="playButton"src="imgForFiba/next.png">
+                <img class="playButton"src="imgForFiba/fastForward.png">
+            </div>
+        </div>
+    </div>
+    -->
+</body>
+</html>

@@ -1,0 +1,531 @@
+
+
+.flag, .flag2{
+    margin-top: 100px;
+   opacity: 0;
+   float: left;
+    height: 4.5vw;
+   position: absolute;
+   z-index: 1;
+}
+
+.con{
+width: 72%;
+margin: auto;
+background-color: red;
+position: relative;
+}
+.menu{
+    width: 49.9%;
+    background-color: rgb(24, 110, 180);
+    height: 3vw;
+    float: left;
+    text-align: center;
+    font-size: 2VW;
+    color: white;
+    cursor: pointer;
+}
+.active{
+background-color: rgb(13, 69, 116);
+}
+.boderRight{
+    border-right: solid;
+border-color: white;
+}
+
+.menu:hover{
+    background-color: rgb(70, 156, 226);
+}
+.partition{
+    width: 25%;
+    float: left;
+
+}
+.backCon{
+    height: 4.5vw;
+  
+}
+
+.headPot{
+    font-size: 1.5vw;
+    padding: .5vw;
+    color: white;
+    text-shadow: .1vw .1vw black;
+}
+.data{
+    position: absolute;
+    margin-left: 3.7vw;
+    color: black;
+    font-size: .8vw;
+    margin-top: .5vw;
+
+}
+.fixDiv{
+    margin-left: 2.7vw;
+    overflow: hidden;
+    position: relative;
+}
+.movingDiv, .movingDiv2{
+    width: 100%;
+    height: 100%;
+    margin-left: -19vw;
+}
+body{
+background-image: url("../imgForFiba/backgroundFiba.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+}
+
+.nav{
+    float: left;
+    width: 100%;
+    background-color: transparent;
+}
+.navigator{
+    width: 60%;
+    margin: auto;
+    height: 5vw;
+    background-color:rgba(0,0,0, .3);
+    border-radius: 25vw;
+    margin-top: .5vw;
+    padding: .5vw;
+}
+.navigator:hover{
+    background-color:rgba(0,0,0, .5);  
+}
+.play{
+margin: auto;
+width: fit-content;
+padding: 0;
+}
+.back{
+    font-size: 5vw;
+    float: left;
+    opacity: .5;
+}
+.playButton{
+   width: 5vw;
+   margin: auto;
+   opacity: .5;
+   cursor: pointer;
+}
+.playButton:hover{
+    opacity: 1;
+}
+
+/*
+===================DRAW=======================
+*/
+.drawCon{
+    width: 70%;
+    background-color: red;
+    margin: auto;
+
+}
+.partitionDraw{
+    width: 48%;
+    float: left;
+    margin: auto;
+    margin-right: 1%;
+}
+.flotRight{
+    float: right;
+}
+.potCon{
+    width: 100%;
+    height: 3vw;
+    margin: auto;
+    position: relative;
+    margin-bottom: .5vw;
+    margin-top: .5vw;
+
+}
+.potTextCon{
+    width: fit-content;
+    background-color:rgb(56, 152, 216);
+    float: left;
+    position: absolute;
+    height: 100%;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    font-size: 1vw;
+    font-weight: bold;
+    color: rgb(4, 42, 75);
+
+    
+}
+.potText{
+    margin-top: 1vw;
+}
+.spacer{
+    height: .8vw;
+}
+.countryCon{
+    height: 1.8vw;
+    float: left;
+    background-color: rgba(255, 255, 255, .6);
+    width: 85%;
+    padding: .2vw;
+    padding-left: 5vw;
+    border-top-right-radius: 25vw;
+    overflow: hidden;
+  
+}
+.perCountryCon{
+    width: 21%;
+    height: 1.8vw;
+    float: left;
+    border-right-style: solid;
+    margin-right: 1vw;
+    border-width: 1px;
+    border-color: white;
+}
+.perCountry{
+    width: 100%;
+    height: 1.8vw;
+    font-size: 1.6vw;
+    float: left;
+
+}
+.drawFlag{
+    height: 1.35vw;
+    margin-top: .2vw;
+    float: left;
+}
+.raffleCon{
+    width: 100%;
+    height: 8vw;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    position: relative;
+}
+.buttonCon{
+position: absolute;
+width: 8vw;
+}
+.click, .officialResultButton{
+    width: 8vw;
+    height: 3.5vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #dd000b;
+    border-color: unset;
+    margin-bottom: .5vw;
+    left: 0;
+    color: white;
+    cursor: pointer;
+}
+.officialResultButton{
+
+}
+
+.begin{
+    float: right;
+    width: 10vw;
+    height: 5vw;
+}
+.unknown{
+    height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+.unknownNumber{
+z-index: 1;
+right: 0;
+height: 100%;
+position: absolute;
+}
+
+.unknowfixDivOuter{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    overflow: hidden;
+}
+.fixdivInner{
+    z-index: 0;
+    width: 80%;
+    height: 100%;
+    margin-left: 2.2vw;
+    overflow: hidden;
+}
+.unknownMovingDiv{
+    height: 100%;
+    left: 0;
+    position: relative;
+}
+
+.movingtext{
+    margin: auto;
+    font-size: 7vw;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.movingFullText{
+    width: 100%;
+    margin: auto;
+    font-size: 1vw;
+    position: absolute;
+    bottom: .2vw;
+    text-align: center;
+    z-index: 1;
+
+}
+.unknownTextCon{
+ height: 100%;
+float: right;
+ position: relative;
+
+}
+.playWhereLabelCon{
+    width: 100%;
+    height: 5vw;
+    float: left;
+}
+.groupCon{
+    width: 100%;
+    height: 17vw;
+    float: left;
+    position: relative;
+ 
+}
+.labelCon{
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2.5vw;
+    background-image: url(imgForFiba/paintStroke.png);
+    background-size: cover;
+}
+.subLabel{
+    font-size: 1vw;
+}
+.console{
+    width: 23%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    right: 0;
+    border-radius: .5vw;
+    border: solid;
+    border-width: .2vw;
+    border-color: white;
+    text-align: left;
+    font-size: 1vw;
+   
+}
+.heading{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-top-left-radius: .5vw;
+    border-top-right-radius: .5vw;
+    border: solid;
+    border-width: .2vw;
+    border-color: white;
+    text-align: center;
+}
+.log{
+    height: 78%;
+    margin: .5vw;
+    margin-top: .25vw;
+    margin-right: 0;
+    overflow-x: auto;
+    position: relative;
+}
+.groupCover{
+    position: absolute;
+    width: 11%;
+    height: 75%;
+    border-radius: 1vw;
+    background-color: black;
+    margin-top: 0;
+    opacity: 0;
+    z-index: 2;
+
+}
+.group{
+    width: 11%;
+    height: 75%;
+    border-radius: 1vw;
+    text-align: center;
+    font-size: 2vw;
+    float: left;
+    margin: .74vw;
+    margin-top: 2.5vw;
+    margin-bottom: 0;
+    color: white;
+}
+
+
+.teams{
+    font-size: 2vw;
+    height: 18%;
+    width: 100%;
+    float: left;
+    padding: .1vw;
+}
+.teamNumber{
+    width: 30%;
+    height: 80%;
+    float: left;
+    border-right: solid;
+    border-width: 1px;
+    font-size: 2vw;
+    opacity: 1;
+}
+.countryFlagResultCon{
+    border-bottom: solid;
+    border-width: 1px;
+    width: 65%;
+    height: 85%;
+    float: left;
+    overflow: hidden;
+}
+.resultFlag{
+    height: 80%;
+    margin-top: .3vw;
+    float: left;
+    margin-left: .1vw;
+    top:1.8vw;
+    position: relative;
+    opacity: 0;
+}
+.resultCountry{
+    float: left;
+    top:1.8vw;
+    position: relative;
+    opacity: 0;
+}
+
+.araneta{
+    background-color: #68b24f; 
+}
+.moa{
+    background-color: #02c171;
+}
+.okinawa{
+    background-color: #9f6fe7;
+}
+.jakarta{
+    background-color: #de8207;
+   
+}
+.aranetaText{
+    color: #68b24f;
+}
+.moaText{
+    color:#02c171;
+}
+.okinawaText{
+    color:#9f6fe7;
+}
+.jakartaText{
+    color: #de8207;
+}
+
+.message{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    background-color: rgba(255,255,255, .8);
+    padding: 1vw;
+    margin: auto 0;
+    text-align: center;
+    font-size: 2.5VW;
+    border-radius: 1vw;
+    border-width: .2vw;
+    border: solid;
+    border-color: white;
+    z-index: 5;
+    opacity: 0;
+}
+/*==================GAME FORMAT==============================*/
+.halfFormat{
+    width: 50%;
+}
+.groupFormat{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    padding:.3vw;
+    color: white;
+    margin-bottom: .5vw;
+    overflow: hidden;
+}
+.perCountryFormat{
+    width: 100%;
+    height: 22.5%;
+    color: black;
+    margin-bottom: 1px;
+    background-color: white;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+ 
+}
+.coverFormat{
+    width: 99%;
+    height: 95%;
+    text-align: center;
+    position: absolute;
+    margin-top: -2vw;
+    background-color: #3e6b2f;
+    color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: #3e6b2f;;
+
+}
+.flagFormat{
+    left: 0;
+    height: 1.2vw;
+    margin-left: .8vw;
+
+}
+.coverColorMoa{
+    background-color: #017444;
+}
+.firstCol, .secondCol {
+    float: left;
+    width: 15%;
+    margin-right: 2vw;
+}
+.foatRight{
+    float: right;
+    margin-right: 0vw;
+    margin-left: 2vw;
+}
+.centerDiv{
+    position: absolute;
+    width: 50%;
+    height: 25vw;
+    background-color: red;
+    margin-left: 25%;
+    text-align: center;
+}
+.startButtonFormat{
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+.secondRound{
+    color: white;
+    text-align: center;
+}
+
