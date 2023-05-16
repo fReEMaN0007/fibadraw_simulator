@@ -1,0 +1,43 @@
+japan - w. rank 36, asia rank 6, 11th(1967) - 31st 0-5
+philippines = w.rank 40, asia rank 8, 3rd(1954) - 32nd 0-5
+finland = w.rank 24, europe rank 13, 22nd(2014) - not qualified
+ivory coast = w.rank 43, africa rank 5, 13th(1982) - 29th 0-5
+new zealand = w.rank 26, asia rank 3, 4th(2002) - 19th 3-2
+lebanon = w.rank 42, asia rank 9, 16th(2002)- not qualified
+canada =w.rank 15, america rank 4, 6th('78,'82) - 21st 2-3
+autralia = w.rank 3, asia rank 1, 4th(2019) - 4th 6-2
+germany = w.rank 11, europe 8, 3rd(2002) - 18th 3-2
+latvia = w.rank 29, europe 16, debut - not qualified
+itlay = w.rank 10, europe 7, 4th('70,'78) - 10th 3-2
+spain = w.rank 1,  europe 1, 1st('06,'19) - 1st 8-0
+china = w.rank 27, asai 4, 8th(1994) - 24th 2-3
+slovenia= w.rank 7, europe 4, 7th(2014) - not qualified
+lithuinia =w.rank 8, europe 5, 3rd(2010) - 9th 3-2
+france = w.rank 5, europe 2, 3rd('14,'19) - 3rd 6-2
+greece = w.rank 9, europe 6, 2nd(2006) - 11th 3-2
+usa = w.rank 2, america 1, 1st(54,86,94,10,14) - 7th 6-2
+jordan =w.rank 34, asia 5, 23rd(2010) - 28th 1-4
+southSudan =w.rank 63, africa 7, debut - not qualified
+egypt= w.rank 55, africa 6, 5th(1950) - not qualified
+angola =w.rank 41, africa 4, 9th(2006) - 27th 1-4
+iran =w.rank 20, asia 2, 19th(2010) - 23rd 2-3
+cape verde= w.rank 66, africa 8, debut - not qualified
+georgia = w.rank 32, europe 18, debut - not qualified
+montenegro = w.rank 18, europe 12, 25th(2019) - 25th 1-4
+mexico = w.rank 31, america 8, 8th(1967) - not qualified
+puerto rico= w.rank 21, america 6, 4th(1990) - 15th 2-3
+Dominican Republic = w.rank 25, america 7, 12th(1978) - 16th 2-3
+venezuela = w.rank 17, america 5, 11th(1990) - 14th 2-3
+brazil =w.rank 13, america 3, 1st (59,63) - 13th 3-2
+serbia =w.rank 6, europe 3, 1st (98,02) 5th 6-2
+
+
+
+
+"<div class='fixDiv'>"+
+      "<div class="+movingDivs[w]+">"+
+      "<div class='data'>"+
+      "<b>Philippines</b><br>World Rk.:40 Asia Rk:8<br>2019 World Cup: 32nd<br>Best Finish:3rd(1954)</div>"+
+      "<img class='backCon' src='imgForFiba/blankTextCon.png'>"+
+      "</div>"+
+ "</div> "
