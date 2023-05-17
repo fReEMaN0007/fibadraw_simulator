@@ -1463,3 +1463,12 @@ function menuSelector(num){
   
 }
 
+$(document).ready(function(){
+$(".anyway").click(function(){
+  $(".mediaQuery").hide();
+})
+$(".videoBut").click(function(){
+  window.location.href = 'https://drive.google.com/file/d/1LtJFAfDWgqHVr3lTjJwXZLL8R1ht-594/view?usp=share_link';
+})
+
+})
